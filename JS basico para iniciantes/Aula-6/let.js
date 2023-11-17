@@ -1,6 +1,3 @@
-/*
-  No JS a duas formas de criar váriaveis, com 'let' que funciona com um sistema de cascata e com 'var' que é um método mais antigo, ela funciona de forma que o valor atribuido a ela existirá mesmo antes dela ser declarada
-*/
 let nome = 'João';
 console.log(nome, 'nasceu em 1984.');
 console.log('Em 2000', nome, 'conheceu Maria.');
