@@ -7,11 +7,13 @@ O 'var' é uma versão antiga do 'let'. Com isso é recomendado o uso do 'let' p
 var nome = 'Kaio';
 var nome = 'Thiago';
 console.log(nome);
+//saída: Thiago
 */
 
 /*
-nome = Luiz; //NÃO FAÇA ISSO
+nome = Luiz; //NÃO DECLARE UMA VÁRIAVEL SEM UMA TAG DE DECLARAÇÃO
 console.log(nome)
+//saída: Luiz
 */
 
 //EMAScript 2015 (ES6) - foi a versão em que o 'let' foi incerido no JS
