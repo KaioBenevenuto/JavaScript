@@ -1,11 +1,11 @@
-let umaString = 'Um "texto"' //'um "texto"'
+let umaString = 'um "texto"'; //"Um \"texto\"" - Dá pra fazer dessa forma também mas não é recomendado
 console.log(umaString)
 
 //As strings são indexadas ou seja cada caractere tem um índice
 //                01234567
 let umaString2 = "Um texto"
-console.log(umaString2[4])
-console.log(umaString2.charAt(1))
+console.log(umaString2[4])//Saída = e
+console.log(umaString2.charAt(1))//Saída = m
 
 console.log(umaString2.concat(" em um lindo dia.")) //concat - concatena
 console.log(umaString2 + " em um lindo dia.")
