@@ -15,7 +15,7 @@ Variáveis são como <strong>um apelido para um valor</strong>, uma espécie de 
 </p>
 
 <p>
-Já valores são os dados que realmente ficam salvos na memória e sustentam determinado tipo. Alguns tipos de valores <strong>são imutáveis</strong>, como <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code>, <code>symbol</code> e <code>bigint</code> (<a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures'>os primitivos todos são imutáveis</a>). Outros tipos são mutáveis, como <code>arrays</code> e <code>objetos</code> (objetos em geral são mutáveis, com exceção de <code>null</code>).
+Já valores são os dados que realmente ficam salvos na memória e sustentam determinado tipo. Alguns tipos de valores <strong>são imutáveis</strong>, como <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code>, <code>symbol</code> e <code>bigint</code> (<a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures' target="_blank">os primitivos todos são imutáveis</a>). Outros tipos são mutáveis, como <code>arrays</code> e <code>objetos</code> (objetos em geral são mutáveis, com exceção de <code>null</code>).
 </p>
 
 <p>
