@@ -6,7 +6,7 @@ function saudacao (nome){
   return `Bom dia ${nome}!`//return - retorna um valor da função
 }
 
-//saudacao('Maria');//Aqui estou chamando a função 'saudacao' e passando um parâmetro
+//saudacao('Maria');//Aqui estou chamando a função 'saudacao' e passando um argumento para o parâmetro
 //saudacao("Lucas");//Funções são reutilizáveis
 
 const variavel = saudacao('Fulano');//A 'variavel' está recebendo o valor retornado da função
