@@ -7,7 +7,7 @@
   - As constantes são 'Case-sensitive'. Significa que, por exemplo, a constante 'folha' é diferente da constante 'Folha'
   - NÃO UTILIZE 'var', UTILIZE 'const'
   - Não é possível declarar uma constante sem inicializa-la
-  - O valor de uma constante não pode ser alterada
+  - O valor de uma constante não pode ser alterado
 */
 const primeiroNumero = 5;
 const segundoNumero = 10;

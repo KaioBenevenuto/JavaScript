@@ -1,5 +1,5 @@
 /*
-O 'var' é uma versão antiga do 'let'. Com isso é recomendado o uso do 'let' pois ele corrigiu muitos problemas que 'var' tinha
+O 'var' é uma versão antiga do 'let'. Com isso é recomendado o uso do 'let' pois ele corrigiu muitos problemas que o 'var' tinha
 */
 
 /*

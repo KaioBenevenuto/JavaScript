@@ -80,7 +80,7 @@ console.log(5 + "5.5")
 console.log(5 + parsetFloat("5.5"));
 */
 
-//'Number' - converte para um número -> Funciona
+//'Number' - converte uma string para um número -> Funciona
 console.log(5 + "5.5")
 console.log(5 + Number("5.5"));
 

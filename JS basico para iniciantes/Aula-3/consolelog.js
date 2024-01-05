@@ -1,4 +1,4 @@
-//A mais de um geito de atribuir uma string. 
+//A mais de um jeito de atribuir uma string. 
 
 //Com '' pode ser colocado "" dentro dela sem dar erro
 console.log('Kaio "Benevenuto Hoffman"');// O ";" é opcional no JS 
