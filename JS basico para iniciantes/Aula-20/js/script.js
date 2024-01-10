@@ -4,7 +4,7 @@ function meuEscopo() {
   
   //Essa é uma forma de parar o envio dos dados ao clicar no 'button' enviar
   //form.onsubmit = function (evento){
-    //  evento.preventDefault();
+  //  evento.preventDefault();
   //};
   
   const pessoas = []
