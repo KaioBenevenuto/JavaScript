@@ -20,20 +20,36 @@ function meuEscopo() {
 
     //console.log(nome.value, sobrenome.value, peso.value, altura.value).
     //O 'value' está mostrando o valor armazenado dentro do input, que está dentro da constante
+    
+    /*
     const criaPessoa = {
       nome: nome.value,
       sobrenome: sobrenome.value,
       peso: peso.value,
       altura: altura.value,
     }
-    
-    pessoas.push(criaPessoa)
 
+    pessoas.push(criaPessoa)
+    */
+    
+    pessoas.push({
+      nome: nome.value,
+      sobrenome: sobrenome.value,
+      peso: peso.value,
+      altura: altura.value
+    });
+
+    console.log(pessoas)
+
+    /*
     resultado.innerHTML = ""
     resultado.innerHTML = `<br>`
     pessoas.map((pessoaItem) => {
       resultado.innerHTML += `${pessoaItem.nome} ${pessoaItem.sobrenome} ${pessoaItem.peso} ${pessoaItem.altura} <br>`
     })
+    */
+
+    resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}</p>`
   }
 
   form.addEventListener("submit", recebeEventoForm)//"addEventListener" -> adicionar ouvinte de evento, "submit" -> enviar
