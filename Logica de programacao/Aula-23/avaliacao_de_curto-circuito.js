@@ -11,7 +11,7 @@
 /*
 * Avaliação de curto-circuito:
 *
-* && -> Assim que identifica um 'false' retorna 'false', se não identifica nenhum, retorna o último valor sendo 'true' ou * 'false'
+* && -> Assim que identifica um 'false' retorna 'false', se não identifica nenhum, retorna o último valor sendo 'true' ou 'false'
 */
 
 //          true   true false true
@@ -21,7 +21,7 @@ console.log("oi" && 12 && 1)//Saíde = 1
 
 
 /*
-* || -> Assim que identifica um true retorna true, se não identifica nenhum, retorna o último     * valor sendo 'true' ou 'false'
+* || -> Assim que identifica um true retorna true, se não identifica nenhum, retorna o último valor sendo 'true' ou 'false'
 */
 
 //        false  false  true  false
