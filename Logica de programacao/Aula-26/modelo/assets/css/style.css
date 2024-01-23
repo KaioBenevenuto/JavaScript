@@ -26,7 +26,48 @@ body{
   border-radius: 10px;
 }
 
-.container, h1, p, table, th, td{
+.container, h1, p, table, th, td, form, label, input{
   background: #fff;
+}
+
+th, td{
+  padding: 0 103px 0 0;
+}
+
+#cabeçalhoDaTabela1, #cabeçalhoDaTabela2{
+  padding: 0 100% 0 0;
+}
+
+#peso, #altura{
+  display: block;
+}
+
+label{
+  font-size: 18px;
+}
+
+form input{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  outline: auto rgb(204, 204, 204);
+}
+input:hover{
+  outline-color: var(--primary-color);
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+}
+
+button:hover{
+  background-color: var(--primary-color-dark);
 }
 
