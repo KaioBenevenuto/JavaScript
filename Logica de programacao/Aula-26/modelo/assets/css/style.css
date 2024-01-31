@@ -34,7 +34,7 @@ th, td{
   padding: 0 103px 0 0;
 }
 
-#cabeçalhoDaTabela1, #cabeçalhoDaTabela2{
+th{
   padding: 0 100% 0 0;
 }
 
@@ -51,6 +51,7 @@ form input{
   height: 50px;
   font-size: 20px;
   margin-bottom: 10px;
+  padding: 0 18px;
   outline: auto rgb(204, 204, 204);
 }
 input:hover{
@@ -70,11 +71,3 @@ button{
 button:hover{
   background-color: var(--primary-color-dark);
 }
-
-div{
-  margin-top: 30px;
-  height: 50px;
-  border-radius: 4px;
-  /*Tenho que melhorar essa parte*/
-}
-
