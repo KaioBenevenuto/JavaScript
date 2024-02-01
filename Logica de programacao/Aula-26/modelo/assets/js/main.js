@@ -42,6 +42,7 @@ function meuEscopo() {
     resultado.style.height = "50px"
     resultado.style.borderRadius = "4px"
     resultado.style.fontSize = "20px"
+    resultado.style.padding = " 0 10px"
 
     resultado.innerHTML = result
   }
