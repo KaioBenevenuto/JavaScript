@@ -71,3 +71,8 @@ button{
 button:hover{
   background-color: var(--primary-color-dark);
 }
+
+div{
+  display: flex;
+  align-items: center;
+}

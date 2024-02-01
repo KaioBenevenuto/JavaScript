@@ -42,7 +42,6 @@ function meuEscopo() {
     resultado.style.height = "50px"
     resultado.style.borderRadius = "4px"
     resultado.style.fontSize = "20px"
-    //Falta ainda centralizar a mensagem no meio
 
     resultado.innerHTML = result
   }
