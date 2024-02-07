@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+  --primary-color: rgb(13,106,134);
+  --primary-color-dark: rgb(9,48,56);
+}
+
+*{
+  box-sizing: border-box;
+  outline: 0;
+  background: var(--primary-color);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container{
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container, h1, p, table, th, td, form, label, input, div{
+  background: #fff;
+}
+
+td{
+  padding: 0 103px 0 0;
+}
+
+th{
+  padding: 0 100% 0 0;
+}
+
+label{
+  font-size: 18px;
+}
+
+form input{
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  outline: auto rgb(204, 204, 204);
+}
+input:hover{
+  outline-color: var(--primary-color);
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+}
+
+button:hover{
+  background-color: var(--primary-color-dark);
+}
+
+.paragrafo-resultado, .bad{
+  background: rgb(147, 253, 218);
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.bad{
+  background: rgb(255, 70, 107);
+}
