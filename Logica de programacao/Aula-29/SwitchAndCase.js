@@ -16,8 +16,7 @@ const diaSemana = data.getDay();
 //   diaSemanaTexto = `Sexta`
 // } else if (diaSemana === 6){
 //   diaSemanaTexto = `Sábado`
-// }
-//   else {
+// } else {
 //   diaSemanaTexto = ``
 // } 
 
