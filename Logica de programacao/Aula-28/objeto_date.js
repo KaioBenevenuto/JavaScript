@@ -11,15 +11,15 @@
 //                      ano  dia mês h   min seg ms
 
 
-//const data = new Date('2024-03-25 12:30:15.999')
-//console.log('Data:', data.getDate())
-//console.log("Mês:", data.getMonth() + 1) //Mês começa do 0
-//console.log("Ano:", data.getFullYear())
-//console.log("h:", data.getHours())
-//console.log("min:", data.getMinutes())
-//console.log("seg:", data.getSeconds())
-//console.log("ms:", data.getMilliseconds())
-//console.log("Dia da semana:", data.getDay()) //0 - Domingo e 6 - Sabado
+// const data = new Date('2024-03-25 12:30:15.999')
+// console.log('Data:', data.getDate())
+// console.log("Mês:", data.getMonth() + 1) //Mês começa do 0
+// console.log("Ano:", data.getFullYear())
+// console.log("h:", data.getHours())
+// console.log("min:", data.getMinutes())
+// console.log("seg:", data.getSeconds())
+// console.log("ms:", data.getMilliseconds())
+// console.log("Dia da semana:", data.getDay()) //0 - Domingo e 6 - Sabado
 
 
 const data = new Date(1707857053202)
