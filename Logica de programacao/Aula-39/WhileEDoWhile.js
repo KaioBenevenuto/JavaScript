@@ -15,5 +15,11 @@ while(rand !== 10){
 // O 'do while' primeiro executa o código e depois checa a condição
 do{
   rand = random(min, max)
-  console.log("Esse número é maior que 10")
+  if(rand > 10){
+    console.log(rand,"é maior que 10")
+  } else if(rand < 10){
+    console.log(rand,"é menor que 10")
+  } else{
+    console.log(rand, "é igual que 10")
+  }
 }while( rand > 10);
