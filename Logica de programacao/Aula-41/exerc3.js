@@ -2,8 +2,8 @@
 // número é divisível por 3 = FIZZ 
 // número é divisível por 5 = BUZZ 
 // número é divisível por 3 e 5 = FIZZBUZZ
-// número NÃO é divisível por 3 e 5 = retorne o proprio número
-// checar se o número é realmente um número = retorne o proprio número
+// número NÃO é divisível por 3 e 5 = retorne o próprio número
+// checar se o número é realmente um número = retorne o próprio número
 // use a função com números de 0 a 100
 
 function fizzBuzz(num){
