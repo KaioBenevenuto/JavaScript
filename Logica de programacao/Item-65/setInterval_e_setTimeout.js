@@ -14,3 +14,4 @@ const timeOut = setInterval(function(){console.log(mostraHora())}, 500)
 
 setTimeout(function () {clearInterval(timeOut)}, 10000)
 //setTimeout - faz a mesma coisa só que, só uma vez
+//O clearInterval() é o que faz parar de execultar
