@@ -1,37 +1,58 @@
+const timer = document.querySelector(".timer")
+let timeOut
+
 document.getElementById("inicia").addEventListener("click", iniciarTimer)
 
-function iniciarTimer(){
-  const timer = document.querySelector(".timer")
+//Inicia o timer 
+function iniciarTimer() {
+  let h = 0
+  let min = 0
+  let seg = 0
 
-  let h =23
-  let min =59
-  let seg =50
+  if (timer.textContent === "00:00:00") {
+    timeOut = setInterval(function () {
+      seg++
 
-  const timeOut = setInterval(function () {
-    seg++
+      if (seg === 60) {
+        seg = 0
+        min++
+      }
 
-    if(seg === 60){
-      seg = 0
-      min++
-    }
+      if (min === 60) {
+        min = 0
+        h++
+      }
 
-    if(min === 60){
-      min = 0
-      h++
-    }
+      if (h === 24) {
+        stop(timeOut)
+      }
+  
+      let hFormatted = h.toString().padStart(2, "0")
+      let minFormatted = min.toString().padStart(2, "0")
+      let segFormatted = seg.toString().padStart(2, "0")
 
-    if(h === 24){
-      stop(timeOut)
-    }
-
-    let hFormatted = h.toString().padStart(2, "0");
-    let minFormatted = min.toString().padStart(2, "0");
-    let segFormatted = seg.toString().padStart(2, "0");
-
-  timer.textContent = `${hFormatted}:${minFormatted}:${segFormatted}`
-}, 1000)
+      timer.textContent = `${hFormatted}:${minFormatted}:${segFormatted}`  
+    }, 1000)
+  }
 }
-
-function stop(timeOut){
+document.getElementById("pausa").addEventListener("click", function () {
+  pausarTimer(timeOut)
+})
+document.getElementById("zera").addEventListener("click", function () {
+  zerarTimer(timeOut)
+})
+//Para o timer
+function stop(timeOut) {
   clearInterval(timeOut)
+}
+//Zera o timer
+function zerarTimer(timeOut){
+  stop(timeOut)
+  timer.textContent = "00:00:00"
+}
+//Para o timer 'oficialmente'
+function pausarTimer(timeOut) {
+  stop(timeOut);
+  timer.style.color = 'red';
+  console.log('oi')
 }
