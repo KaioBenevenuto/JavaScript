@@ -62,7 +62,7 @@ function pausarTimer() {
     stop(timeOut)
     timer.style.color = "crimson"
     key = false
-    securityKey = false
+    securityKey = falsegit
   } else{
     cronometro()
     timer.style.color = "black"
