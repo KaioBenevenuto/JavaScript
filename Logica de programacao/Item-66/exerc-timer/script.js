@@ -1,58 +1,72 @@
 const timer = document.querySelector(".timer")
 let timeOut
+let key = true
+let securityKey = true
+let h = 0
+let min = 0
+let seg = 0
 
 document.getElementById("inicia").addEventListener("click", iniciarTimer)
+document.getElementById("pausa").addEventListener("click", pausarTimer)
+document.getElementById("zera").addEventListener("click", zerarTimer)
 
+//timer
+function cronometro(){
+  timeOut = setInterval(function () {
+    seg++
+
+    if (seg === 60) {
+      seg = 0
+      min++
+    }
+
+    if (min === 60) {
+      min = 0
+      h++
+    }
+
+    if (h === 24) {
+      stop(timeOut)
+    }
+
+    let hFormatted = h.toString().padStart(2, "0")
+    let minFormatted = min.toString().padStart(2, "0")
+    let segFormatted = seg.toString().padStart(2, "0")
+
+    timer.textContent = `${hFormatted}:${minFormatted}:${segFormatted}`
+  }, 1000)
+}
 //Inicia o timer 
 function iniciarTimer() {
-  let h = 0
-  let min = 0
-  let seg = 0
-
-  if (timer.textContent === "00:00:00") {
-    timeOut = setInterval(function () {
-      seg++
-
-      if (seg === 60) {
-        seg = 0
-        min++
-      }
-
-      if (min === 60) {
-        min = 0
-        h++
-      }
-
-      if (h === 24) {
-        stop(timeOut)
-      }
-  
-      let hFormatted = h.toString().padStart(2, "0")
-      let minFormatted = min.toString().padStart(2, "0")
-      let segFormatted = seg.toString().padStart(2, "0")
-
-      timer.textContent = `${hFormatted}:${minFormatted}:${segFormatted}`  
-    }, 1000)
+  if (timer.textContent === "00:00:00" && securityKey) {
+    h = 0
+    min = 0
+    seg = 0
+    cronometro()
   }
 }
-document.getElementById("pausa").addEventListener("click", function () {
-  pausarTimer(timeOut)
-})
-document.getElementById("zera").addEventListener("click", function () {
-  zerarTimer(timeOut)
-})
 //Para o timer
 function stop(timeOut) {
   clearInterval(timeOut)
 }
 //Zera o timer
-function zerarTimer(timeOut){
-  stop(timeOut)
-  timer.textContent = "00:00:00"
+function zerarTimer(){
+  if(securityKey){
+    stop(timeOut)
+    timer.textContent = "00:00:00"
+  }
 }
 //Para o timer 'oficialmente'
-function pausarTimer(timeOut) {
-  stop(timeOut);
-  timer.style.color = 'red';
-  console.log('oi')
+function pausarTimer() {
+  if(key){
+    stop(timeOut)
+    timer.style.color = "crimson"
+    key = false
+    securityKey = false
+  } else{
+    cronometro()
+    timer.style.color = "black"
+    key = true
+    securityKey = true
+  }
 }
