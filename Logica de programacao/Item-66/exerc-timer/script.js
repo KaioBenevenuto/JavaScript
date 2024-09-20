@@ -52,17 +52,20 @@ function stop(timeOut) {
 //Zera o timer
 function zerarTimer(){
   if(securityKey){
+    h = 0
+    min = 0
+    seg = 0
     stop(timeOut)
     timer.textContent = "00:00:00"
   }
 }
 //Para o timer 'oficialmente'
 function pausarTimer() {
-  if(key){
+  if (key) {
     stop(timeOut)
     timer.style.color = "crimson"
     key = false
-    securityKey = falsegit
+    securityKey = false
   } else{
     cronometro()
     timer.style.color = "black"
