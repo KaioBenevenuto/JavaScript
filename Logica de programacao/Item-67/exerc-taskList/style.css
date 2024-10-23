@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  outline: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  background-color: #486966;
+  display: flex;
+  justify-content: center;
+}
+section{
+  margin-top: 30px;
+  background-color:white;
+  border-radius: 10px;
+  padding: 20px 15px;
+  width: 400px;
+  height: 240px;
+}
+#container{
+  display: flex;
+  gap: 5px;
+}
+.list{
+  font-size: 18px;
+  padding-left: 25px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.apagar{
+  margin-left: 5px;
+}
